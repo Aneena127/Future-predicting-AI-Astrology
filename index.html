@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrongAstrology AI 🔮 | Deliberately Unreliable Future Predictor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Mystical Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Starry Night Background -->
+    <div id="stars-container"></div>
+    <div id="nebula-bg"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo-icon">🔮</div>
+            <h1 class="title">WrongAstrology AI</h1>
+            <p class="subtitle">Short & Savage Future Roasts ✨</p>
+            <div class="disclaimer-badge">100% Unreliable • 100% Savage • Powered by Broken Celestial Charts</div>
+        </header>
+
+        <main class="main-content">
+            <!-- Input Form Card -->
+            <section class="card input-card" id="form-section">
+                <h2 class="card-title">✨ Enter Your Cosmic Details</h2>
+                
+                <form id="astrology-form">
+                    <div class="form-group">
+                        <label for="user-name">Your Name (Optional)</label>
+                        <input type="text" id="user-name" placeholder="e.g. Aneena, Star Child, Cosmic Traveller" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth <span class="required">*</span></label>
+                        <input type="date" id="dob" required value="2004-07-13">
+                        <small class="help-text">Used to calculate exact past moments you were too young to remember!</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quick Question Presets</label>
+                        <div class="presets-grid">
+                            <button type="button" class="preset-btn active" data-q="When will I get married?">💍 When will I marry?</button>
+                            <button type="button" class="preset-btn" data-q="Will I become a millionaire?">💰 Will I get rich?</button>
+                            <button type="button" class="preset-btn" data-q="When will I buy a sports car?">🏎️ When buy Ferrari?</button>
+                            <button type="button" class="preset-btn" data-q="Who is my cosmic soulmate?">💖 Who is soulmate?</button>
+                            <button type="button" class="preset-btn" data-q="When will I get a dream job?">💼 Career future?</button>
+                            <button type="button" class="preset-btn" data-q="How long will I live?">⏳ How long live?</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="question">Your Question for the Stars</label>
+                        <textarea id="question" rows="3" placeholder="Ask anything... e.g. When will I get married?"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="predict-btn">
+                        <span class="btn-text">Consult the Broken Stars ✨</span>
+                        <span class="btn-spinner hidden"></span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Loading Crystal Ball State -->
+            <section class="card loading-card hidden" id="loading-section">
+                <div class="crystal-ball-wrapper">
+                    <div class="crystal-ball">
+                        <div class="ball-reflection"></div>
+                        <div class="ball-smoke"></div>
+                    </div>
+                    <div class="ball-pedestal"></div>
+                </div>
+                <h3 class="loading-status" id="loading-status">Consulting Mercury in Gatorade...</h3>
+                <p class="loading-subtext">Calculating cosmic paradoxes and past infant events...</p>
+            </section>
+
+            <!-- Fortune Result Card -->
+            <section class="card result-card hidden" id="result-section">
+                <div class="result-header">
+                    <span class="result-tag">✨ Official Incorrect Horoscope</span>
+                    <span class="timestamp" id="res-timestamp"></span>
+                </div>
+
+                <div class="zodiac-banner">
+                    <div class="zodiac-badge" id="res-zodiac">Cancer</div>
+                    <div class="zodiac-details">
+                        <span id="res-element">Element: Tears of Frustration</span> • 
+                        <span id="res-planet">Ruling Planet: Mercury in Gatorade</span>
+                    </div>
+                </div>
+
+                <div class="verdict-badge" id="res-verdict">STATUS: Married at Age 0</div>
+
+                <div class="prediction-box">
+                    <p class="prediction-text" id="res-prediction">
+                        <!-- Prediction populated by JS -->
+                    </p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Absurd Lucky Number</span>
+                        <span class="stat-value" id="res-number">√-1</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Cosmic Lucky Color</span>
+                        <span class="stat-value" id="res-color">Anxious Yellow</span>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="action-btn reroll-btn" id="reroll-btn">🎲 Reroll Nonsense</button>
+                    <button class="action-btn copy-btn" id="copy-btn">📋 Copy Prediction</button>
+                    <button class="action-btn speak-btn" id="speak-btn">🔊 Read Aloud</button>
+                    <button class="action-btn retry-btn" id="retry-btn">🔮 New Question</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Made with 💜 for laughs. Predictions are 100% false and intended purely for entertainment.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="absurd_astrology.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
